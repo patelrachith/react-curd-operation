@@ -21,7 +21,7 @@ class Test extends React.Component {
   render() {
     return (
       <div>
-        <h1>GeeksForGeeks.org, Hello {this.state.hello}</h1>
+        <h1>Hello {this.state.hello}</h1>
         <h2>
           <a onClick={this.changeState.bind(this)}>Press Here!</a>
         </h2>
