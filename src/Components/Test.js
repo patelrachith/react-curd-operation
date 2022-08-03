@@ -3,7 +3,10 @@ import React from 'react';
 class Test extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { hello: 'World!' };
+    this.state = {
+      hello: 'World!',
+      mode: 0,
+    };
   }
 
   componentWillMount() {
@@ -15,7 +18,11 @@ class Test extends React.Component {
   }
 
   changeState() {
-    this.setState({ hello: 'Rachit!' });
+    if (this.state.mode === 0) {
+      this.setState({ hello: 'Rachit!', mode: 1 });
+    } else {
+      this.setState({ hello: 'Patel!', mode: 1 });
+    }
   }
 
   render() {
