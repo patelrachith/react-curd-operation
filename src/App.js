@@ -5,7 +5,7 @@ import Test from './Components/Test';
 export default function App() {
   return (
     <div>
-      <h1>Hello Rachit!</h1>
+      <h1>Hello Rachit Patel!</h1>
       <hr />
       <Test />
     </div>

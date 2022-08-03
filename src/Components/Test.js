@@ -18,10 +18,11 @@ class Test extends React.Component {
   }
 
   changeState() {
+    console.log(this.state.mode);
     if (this.state.mode === 0) {
       this.setState({ hello: 'Rachit!', mode: 1 });
     } else {
-      this.setState({ hello: 'Patel!', mode: 1 });
+      this.setState({ hello: 'Patel!', mode: 0 });
     }
   }
 
