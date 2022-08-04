@@ -1,21 +1,20 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
-class Header extends React.Component {
-  constructor(props) {
-    super(props);
+function Header() {
+  let navigate = useNavigate();
 
-    this.state = {};
-  }
+  // function nextPath(path) {
+  //   this.navigate(path);
+  // }
 
-  render() {
-    return (
-      <>
-        <button>Home</button>
-        <button>About</button>
-        <button>Contact</button>
-      </>
-    );
-  }
+  return (
+    <>
+      <button>Home</button>
+      <button>About</button>
+      <button>Contact</button>
+    </>
+  );
 }
 
 export default Header;
